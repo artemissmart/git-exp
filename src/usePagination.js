@@ -30,6 +30,13 @@ export const usePagination = ({
         const rightSiblingIndex = Math.min(
             currentPage + siblingCount, totalPageCount
         );
+        /*
+        We do not show dots just when there is just one page number to be inserted
+        between the extremes of sibling and the page limits limits i.e 1 and totalPageCount.
+        Hence we are using leftSiblingIndex > 2 and rightSiblingIndex < totalPageCount - 2 
+        */ 
+       const
+
 
 },[totalCount, pageSize, siblingCount, currentPage]);
     return paginationRange;
