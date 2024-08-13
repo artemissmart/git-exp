@@ -26,8 +26,10 @@ export const usePagination = ({
             are within range 1 and totalPageCount
 
         */
-        const leftSiblingIndex    
-
+        const leftSiblingIndex = Math.max(currentPage - siblingCount, 1)   ;
+        const rightSiblingIndex = Math.min(
+            currentPage + siblingCount, totalPageCount
+        );
 
 },[totalCount, pageSize, siblingCount, currentPage]);
     return paginationRange;
