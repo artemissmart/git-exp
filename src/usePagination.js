@@ -35,8 +35,8 @@ export const usePagination = ({
         between the extremes of sibling and the page limits limits i.e 1 and totalPageCount.
         Hence we are using leftSiblingIndex > 2 and rightSiblingIndex < totalPageCount - 2 
         */ 
-       const
-
+       const shouldShowLeftDots = leftSiblingIndex > 2;
+        const shouldShowRightDots = rightSiblingIndex < totalPageCount -2;
 
 },[totalCount, pageSize, siblingCount, currentPage]);
     return paginationRange;
