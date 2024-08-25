@@ -1,13 +1,13 @@
-import UserGreeting from "./UserGreeting.jsx"
+import Header from "./Header.jsx"
+
 
 function App() {
  
-  return(
-
-    <>
-      <UserGreeting isLoggedIn={false} username="Eric "/>
-    </>
-  ); 
+ 
+    return(
+      <Header/>
+    );
+  
 }
 
 export default App
