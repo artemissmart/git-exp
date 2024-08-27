@@ -1,15 +1,4 @@
-.welcome-message{
-      font-size: 100px;
-      max-width: 50%;
-         background-color: brown;
-      color: blue;
-      margin: 10px
-
-}
-.login-prompt{
-       font-size: 50px;
-       max-width: 60%;
-       background-color: rgba(0, 0, 255, 0.605);
-       padding: 10px;
-       border-radius: 10px      
+.button {
+margin: 50px;
+background-color: rgb(236, 231, 232);
 }
