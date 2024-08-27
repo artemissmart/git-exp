@@ -1,22 +1,22 @@
 
 
-function Button(){
+function Button() {
 
-    let count = 0;
+let count = 5;
 
-    const handleClick = (name) => {
-        if(count < 3){
-            count++;
-            console.log(`${name} you clicked on me and why ${count} times ??`);
-        } else {
-            console.log(`${name} stop doing this`)
-        }
+const handleClick = (arg1) => {
+    if(count < 10) {
+        count++;
+        console.log(`${arg1} why did you clicked me ? ${(count)} `);
+    }
+    else{
+        console.log(`${name} stop doing this...plz`);
+    }
 
+};
 
+return(<button onClick={() => handleClick("Samy")} > onTap</button>) 
 
-
-    };
-    return (<button onClick={() => handleClick("Arthur :D")}>Click to win a sentence</button>)
 
 }
 
