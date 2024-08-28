@@ -4,18 +4,12 @@
 
 function Button() {
 
-    const handleclick = (e) => e.target.textContent = "aiiiiiiie XD";
+    const handleClick = (e) => e.target.textContent = "Yeah !!";
+    
+    return(<button onDoubleClick={(e) => handleClick(e)} >Click pouette</button>) 
 
-    return(<button onDoubleClick={(e) => handleclick(e)}>POWER</button>)
+
 
 }
+
 export default Button
-
-
-
-
-
-
-
-
-
